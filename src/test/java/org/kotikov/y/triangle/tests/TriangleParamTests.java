@@ -71,7 +71,7 @@ public class TriangleParamTests {
  
     public static Object[] positiveTestsData(){
     	
-    	System.out.println("xxxxx");
+    	 
     	
     	Object[]  dataset= $( 
     		/*
@@ -105,7 +105,7 @@ public class TriangleParamTests {
     
     	    //dataset = (dataset +  (dataset * 6)) * 16  
     	    //one triangle = 112 tests
-    	 return  TranglesDataGenerator.dataPrepare((Object[]) dataset) ;
+    	 return  TrianglesDataGenerator.dataPrepare((Object[]) dataset) ;
     }
     
     

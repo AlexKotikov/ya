@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TranglesDataGenerator {
+public class TrianglesDataGenerator {
 
 	private static List<Object[]>  resultSetOfData = new  ArrayList<Object[]>();
 	
@@ -23,12 +23,12 @@ public class TranglesDataGenerator {
 		  
 		   //nabor =X +  (X * 6) 
 		    for(int i=0; i<obj.length; i++) { 
-		     tempNabor.addAll( Arrays.asList(TranglesDataGenerator.coordsShuffler((Object[]) obj[i])));
+		     tempNabor.addAll( Arrays.asList(TrianglesDataGenerator.coordsShuffler((Object[]) obj[i])));
 		   }
 
 		   //nabor = nabor * 16
 		  for(int i=0; i< tempNabor.size(); i++) { 
-		    	TranglesDataGenerator.sendToCoordinateSystem((Object[]) tempNabor.get(i));
+		    	TrianglesDataGenerator.sendToCoordinateSystem((Object[]) tempNabor.get(i));
 		    	}
 		 
 		return resultSetOfData.toArray();
@@ -48,7 +48,7 @@ public class TranglesDataGenerator {
   }
   
   public static void main (String[] arg){
-		TranglesDataGenerator.sendToCoordinateSystem(new Object[] {6, 2,  6, 7,  2, 2, " treugolnicheg1"}) ;
+		TrianglesDataGenerator.sendToCoordinateSystem(new Object[] {6, 2,  6, 7,  2, 2, " treugolnicheg1"}) ;
 		
 		   for (Object nabor : resultSetOfData) {
 		   
